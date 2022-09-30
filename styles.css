@@ -56,98 +56,80 @@ body {
 	}
 
 	.cell {
-		width: 120px;
-		height: 40px;
-		background-color: #0073e6;
-		/* background: linear-gradient(249.84deg, #3093EF -43.66%, #403CC5 100%); */
-	}
-	.cell:first-child:before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #0073e6;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:first-child:after {
 		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 15px;
-		content: "04:27 01.09.2022";
-		width: auto;
+		width: 120px;
+		text-align: center;
 		height: 40px;
-		z-index: 3;
+		background-color: #0073e6;
+		justify-content: center;
+	}
+
+	.cell p {
+		position: relative;
+		top: 12px;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 12px;
+		font-size: 10px;
 		line-height: 16px;
-		color: #ffffff;
+		color: #3f3cc5;
 		font-family: AvenirNextLTPro;
 	}
+
+	.cell:first-child:before {
+		display: block;
+		position: absolute;
+		left: 105px;
+		content: "";
+		width: 40px;
+		height: 40px;
+		background-color: #0073e6;
+		clip-path: polygon(0 0, 82% 0%, 38% 103%, 0 100%);
+	}
+
 	.cell:nth-child(2) {
 		background-color: #e4e4e4;
+		color: black;
+	}
+
+	.cell:nth-child(2) p {
+		background-color: #e4e4e4;
+		text-align: center;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 10px;
 	}
 	.cell:nth-child(3) {
 		background-color: #f2f2f2;
 	}
+	.cell:nth-child(3) p {
+		background-color: #f2f2f2;
+		position: relative;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 15px;
+	}
 
 	.cell:nth-child(2):before {
 		display: block;
-		position: relative;
-		left: 115px;
+		position: absolute;
+		left: 230px;
 		content: "";
-		width: 20px;
+		width: 40px;
 		height: 40px;
 		background-color: #e4e4e4;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:nth-child(2):after {
-		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 160px;
-		content: "Политика";
-		width: auto;
-		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		color: #3f3cc5;
-		font-family: AvenirNextLTPro;
-	}
-	.cell:nth-child(3):before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #f2f2f2;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 	.cell:nth-child(3):after {
-		display: flex;
-		align-items: center;
+		display: block;
 		position: absolute;
-		top: 0;
-		left: 267px;
-		content: "Знаменитости";
-		color: #3f3cc5;
-		width: auto;
+		left: 360px;
+		content: "";
+		width: 40px;
 		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		font-family: AvenirNextLTPro;
+		background-color: #f2f2f2;
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 	.adver_corner {
 		display: none;
@@ -316,7 +298,7 @@ body {
 		font-style: normal;
 		font-weight: 700;
 		font-size: 24px;
-		line-height: 26px;
+		line-height: 30px;
 		padding-right: 1rem;
 	}
 
@@ -368,12 +350,26 @@ body {
 	.news_title_text h2 {
 		font-size: 20px;
 		font-family: MullerRegular;
-		line-height: 22px;
-		/* font-weight: 500; */
+		line-height: 26px;
 	}
 
 	.news_title_pic img {
 		width: 100vw;
+	}
+
+	.news_title_pic {
+		margin-bottom: 1rem;
+		position: relative;
+	}
+	.adver_in_image {
+		position: absolute;
+		top: 80%;
+		left: 5%;
+		color: #fff;
+		z-index: 5;
+		background-color: #3f3cc5;
+		border-radius: 15px;
+		padding: 5px 10px;
 	}
 
 	.details_text {
@@ -441,6 +437,7 @@ body {
 		font-size: 12px;
 		font-family: AvenirNextLTPro;
 		margin-top: 5%;
+		line-height: 24px;
 	}
 }
 
@@ -451,98 +448,80 @@ body {
 	}
 
 	.cell {
-		width: 120px;
-		height: 40px;
-		background-color: #0073e6;
-		/* background: linear-gradient(249.84deg, #3093EF -43.66%, #403CC5 100%); */
-	}
-	.cell:first-child:before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #0073e6;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:first-child:after {
 		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 15px;
-		content: "04:27 01.09.2022";
-		width: auto;
+		width: 140px;
+		text-align: center;
 		height: 40px;
-		z-index: 3;
+		background-color: #0073e6;
+		justify-content: center;
+	}
+
+	.cell p {
+		position: relative;
+		top: 12px;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 12px;
 		line-height: 16px;
-		color: #ffffff;
+		color: #3f3cc5;
 		font-family: AvenirNextLTPro;
 	}
+
+	.cell:first-child:before {
+		display: block;
+		position: absolute;
+		left: 125px;
+		content: "";
+		width: 40px;
+		height: 40px;
+		background-color: #0073e6;
+		clip-path: polygon(0 0, 82% 0%, 38% 103%, 0 100%);
+	}
+
 	.cell:nth-child(2) {
 		background-color: #e4e4e4;
+		color: black;
+	}
+
+	.cell:nth-child(2) p {
+		background-color: #e4e4e4;
+		text-align: center;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 10px;
 	}
 	.cell:nth-child(3) {
 		background-color: #f2f2f2;
 	}
+	.cell:nth-child(3) p {
+		background-color: #f2f2f2;
+		position: relative;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 20px;
+	}
 
 	.cell:nth-child(2):before {
 		display: block;
-		position: relative;
-		left: 115px;
+		position: absolute;
+		left: 270px;
 		content: "";
-		width: 20px;
+		width: 40px;
 		height: 40px;
 		background-color: #e4e4e4;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:nth-child(2):after {
-		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 160px;
-		content: "Политика";
-		width: auto;
-		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		color: #3f3cc5;
-		font-family: AvenirNextLTPro;
-	}
-	.cell:nth-child(3):before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #f2f2f2;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 	.cell:nth-child(3):after {
-		display: flex;
-		align-items: center;
+		display: block;
 		position: absolute;
-		top: 0;
-		left: 267px;
-		content: "Знаменитости";
-		color: #3f3cc5;
-		width: auto;
+		left: 420px;
+		content: "";
+		width: 40px;
 		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		font-family: AvenirNextLTPro;
+		background-color: #f2f2f2;
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 	.adver_corner {
 		display: none;
@@ -684,7 +663,6 @@ body {
 		text-decoration: none;
 		color: #382828;
 		font-family: AvenirNextLTPro;
-		border-right: 2px solid #00bbff;
 		padding-right: 0.8rem;
 		margin-right: 0.8rem;
 		font-weight: 700;
@@ -786,7 +764,20 @@ body {
 	.news_title_pic img {
 		width: 70vw;
 	}
-
+	.news_title_pic {
+		margin-bottom: 1rem;
+		position: relative;
+	}
+	.adver_in_image {
+		position: absolute;
+		top: 85%;
+		left: 5%;
+		color: #fff;
+		z-index: 5;
+		background-color: #3f3cc5;
+		border-radius: 15px;
+		padding: 5px 10px;
+	}
 	.hamburger {
 		display: block;
 	}
@@ -845,98 +836,80 @@ body {
 	}
 
 	.cell {
-		width: 120px;
-		height: 40px;
-		background-color: #0073e6;
-		/* background: linear-gradient(249.84deg, #3093EF -43.66%, #403CC5 100%); */
-	}
-	.cell:first-child:before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #0073e6;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:first-child:after {
 		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 15px;
-		content: "04:27 01.09.2022";
-		width: auto;
+		width: 140px;
+		text-align: center;
 		height: 40px;
-		z-index: 3;
+		background-color: #0073e6;
+		justify-content: center;
+	}
+
+	.cell p {
+		position: relative;
+		top: 12px;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 12px;
 		line-height: 16px;
-		color: #ffffff;
+		color: #3f3cc5;
 		font-family: AvenirNextLTPro;
 	}
+
+	.cell:first-child:before {
+		display: block;
+		position: absolute;
+		left: 125px;
+		content: "";
+		width: 40px;
+		height: 40px;
+		background-color: #0073e6;
+		clip-path: polygon(0 0, 82% 0%, 38% 103%, 0 100%);
+	}
+
 	.cell:nth-child(2) {
 		background-color: #e4e4e4;
+		color: black;
+	}
+
+	.cell:nth-child(2) p {
+		background-color: #e4e4e4;
+		text-align: center;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 10px;
 	}
 	.cell:nth-child(3) {
 		background-color: #f2f2f2;
 	}
+	.cell:nth-child(3) p {
+		background-color: #f2f2f2;
+		position: relative;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 20px;
+	}
 
 	.cell:nth-child(2):before {
 		display: block;
-		position: relative;
-		left: 115px;
+		position: absolute;
+		left: 270px;
 		content: "";
-		width: 20px;
+		width: 40px;
 		height: 40px;
 		background-color: #e4e4e4;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:nth-child(2):after {
-		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 160px;
-		content: "Политика";
-		width: auto;
-		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		color: #3f3cc5;
-		font-family: AvenirNextLTPro;
-	}
-	.cell:nth-child(3):before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #f2f2f2;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 	.cell:nth-child(3):after {
-		display: flex;
-		align-items: center;
+		display: block;
 		position: absolute;
-		top: 0;
-		left: 267px;
-		content: "Знаменитости";
-		color: #3f3cc5;
-		width: auto;
+		left: 420px;
+		content: "";
+		width: 40px;
 		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		font-family: AvenirNextLTPro;
+		background-color: #f2f2f2;
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 
 	.adver_corner {
@@ -1046,7 +1019,6 @@ body {
 		text-decoration: none;
 		color: #382828;
 		font-family: AvenirNextLTPro;
-		border-right: 2px solid #00bbff;
 		padding-right: 0.7rem;
 		margin-right: 0.7rem;
 		font-weight: 900;
@@ -1158,10 +1130,20 @@ body {
 		padding: 0 1.2rem;
 	}
 
+	.adver_in_image {
+		position: absolute;
+		top: 85%;
+		left: 5%;
+		color: #fff;
+		z-index: 5;
+		background-color: #3f3cc5;
+		border-radius: 15px;
+		padding: 5px 10px;
+	}
 	.news_title_pic {
 		margin-bottom: 1rem;
+		position: relative;
 	}
-
 	.news_title_text h2 {
 		font-size: 22px;
 		font-style: normal;
@@ -1257,7 +1239,6 @@ body {
 		text-decoration: none;
 		color: #382828;
 		font-family: AvenirNextLTPro;
-		border-right: 2px solid #00bbff;
 		padding-right: 0.7rem;
 		margin-right: 0.7rem;
 		font-weight: 900;
@@ -1365,6 +1346,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		margin-top: 1.6rem;
+		position: relative;
 	}
 
 	.news_title h2 {
@@ -1379,6 +1361,18 @@ body {
 
 	.news_title_pic {
 		margin-bottom: 1rem;
+		position: relative;
+	}
+
+	.adver_in_image {
+		position: absolute;
+		top: 85%;
+		left: 5%;
+		color: #fff;
+		z-index: 5;
+		background-color: #3f3cc5;
+		border-radius: 15px;
+		padding: 5px 10px;
 	}
 
 	.news_title_text h2 {
@@ -1437,97 +1431,79 @@ body {
 	}
 
 	.cell {
-		width: 120px;
-		height: 40px;
-		background-color: #0073e6;
-		/* background: linear-gradient(249.84deg, #3093EF -43.66%, #403CC5 100%); */
-	}
-	.cell:first-child:before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #0073e6;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:first-child:after {
 		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 15px;
-		content: "04:27 01.09.2022";
-		width: auto;
+		width: 140px;
+		text-align: center;
 		height: 40px;
-		z-index: 3;
+		background-color: #0073e6;
+		justify-content: center;
+	}
+
+	.cell p {
+		position: relative;
+		top: 12px;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 12px;
 		line-height: 16px;
-		color: #ffffff;
+		color: #3f3cc5;
 		font-family: AvenirNextLTPro;
 	}
+
+	.cell:first-child:before {
+		display: block;
+		position: absolute;
+		left: 125px;
+		content: "";
+		width: 40px;
+		height: 40px;
+		background-color: #0073e6;
+		clip-path: polygon(0 0, 82% 0%, 38% 103%, 0 100%);
+	}
+
 	.cell:nth-child(2) {
 		background-color: #e4e4e4;
+		color: black;
+	}
+
+	.cell:nth-child(2) p {
+		background-color: #e4e4e4;
+		text-align: center;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 10px;
 	}
 	.cell:nth-child(3) {
 		background-color: #f2f2f2;
 	}
+	.cell:nth-child(3) p {
+		background-color: #f2f2f2;
+		position: relative;
+		overflow-x: hidden;
+		height: 20px;
+		margin: 0 auto;
+		left: 20px;
+	}
 
 	.cell:nth-child(2):before {
 		display: block;
-		position: relative;
-		left: 115px;
+		position: absolute;
+		left: 270px;
 		content: "";
-		width: 20px;
+		width: 40px;
 		height: 40px;
 		background-color: #e4e4e4;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
-	}
-	.cell:nth-child(2):after {
-		display: flex;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		left: 160px;
-		content: "Политика";
-		width: auto;
-		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		color: #3f3cc5;
-		font-family: AvenirNextLTPro;
-	}
-	.cell:nth-child(3):before {
-		display: block;
-		position: relative;
-		left: 115px;
-		content: "";
-		width: 20px;
-		height: 40px;
-		background-color: #f2f2f2;
-		clip-path: polygon(0 0, 100% 0%, 34% 98%, 0 99%);
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 	.cell:nth-child(3):after {
-		display: flex;
-		align-items: center;
+		display: block;
 		position: absolute;
-		top: 0;
-		left: 267px;
-		content: "Знаменитости";
-		color: #3f3cc5;
-		width: auto;
+		left: 420px;
+		content: "";
+		width: 40px;
 		height: 40px;
-		z-index: 3;
-		font-style: normal;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		font-family: AvenirNextLTPro;
+		background-color: #f2f2f2;
+		clip-path: polygon(0 0, 82% 0%, 34% 98%, 0 99%);
 	}
 }
