@@ -31,24 +31,6 @@ body {
 	overflow-x: hidden;
 }
 
-.news_title h1 {
-	font-family: MullerMedium;
-}
-
-.news_title h2 {
-	font-family: MullerBold;
-}
-
-.main_title p {
-	font-family: AvenirNextLTPro;
-}
-
-.adver_corner_content {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
 @media screen and (max-width: 400px) {
 	.main_title_text {
 		font-size: 22px;
@@ -307,8 +289,8 @@ body {
 	}
 
 	.main_title {
-		margin-left: 1.3rem;
-		padding-top: 1.3rem;
+		margin-left: 1rem;
+		/* padding-top: 1.3rem; */
 	}
 
 	.main_title_text {
@@ -365,9 +347,11 @@ body {
 	}
 
 	.news_title_text h2 {
-		font-size: 20px;
-		font-family: MullerRegular;
-		line-height: 26px;
+		font-family: AvenirNextLTPro;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
 	}
 
 	.news_title_pic img {
@@ -459,9 +443,43 @@ body {
 		margin-top: 5%;
 		line-height: 24px;
 	}
+	.citate_blog h2 {
+		font-size: 12px;
+		line-height: normal;
+	}
+	.main_title_text {
+		font-size: 22px;
+		line-height: 24px;
+	}
+	news_title_pic {
+		max-height: 150px;
+		overflow: hidden;
+	}
+	.news_title {
+		margin-top: 1rem;
+	}
+	.main_title p,
+	.relative_buttons {
+		margin-top: 0.5rem;
+	}
+	.main_title_text {
+		font-size: 22px;
+		line-height: 24px;
+	}
+	news_title_pic {
+		max-height: 150px;
+		overflow: hidden;
+	}
+	.news_title {
+		margin-top: 1rem;
+	}
+	.main_title p,
+	.relative_buttons {
+		margin-top: 0.5rem;
+	}
 }
 
-@media screen and (min-width: 399px) and (max-width: 767px) {
+@media screen and (min-width: 401px) and (max-width: 767px) {
 	.unk {
 		display: flex;
 		border-bottom: #3f3fc6 2px solid;
@@ -1178,13 +1196,16 @@ body {
 	}
 
 	.news_title_text {
-		padding: 0 1rem;
+		/* padding: 0 1rem; */
 		margin-top: 1rem;
 	}
 
 	.news_title_text h2 {
-		font-size: 18px;
+		font-family: AvenirNextLTPro;
 		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 27px;
 	}
 
 	.news_title_pic img {
