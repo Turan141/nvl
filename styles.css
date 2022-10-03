@@ -448,7 +448,7 @@ body {
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 	.unk {
 		display: flex;
 		border-bottom: #3f3fc6 2px solid;
