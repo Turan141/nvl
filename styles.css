@@ -1043,8 +1043,7 @@ body {
 	}
 
 	.navbar_main__left img {
-		width: 60%;
-		max-width: 100%;
+		width: 90%;
 	}
 
 	.navbar_blue_bg {
@@ -1068,7 +1067,7 @@ body {
 
 	.navbar_blue_bg img {
 		position: relative;
-		left: 200px;
+		left: 170px;
 		max-width: 100%;
 	}
 
@@ -1093,7 +1092,6 @@ body {
 	}
 
 	.author img {
-		width: 100%;
 		max-width: 100%;
 	}
 
@@ -1276,6 +1274,10 @@ body {
 		line-height: 28px;
 		font-family: AvenirNextLTPro;
 		margin-top: 5%;
+	}
+	.author img {
+		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -1635,6 +1637,10 @@ body {
 		line-height: 33px;
 		font-family: AvenirNextLTPro;
 		margin-top: 5%;
+	}
+	.author img {
+		width: 100%;
+		max-width: 100%;
 	}
 }
 
